@@ -10,7 +10,7 @@ import { Features } from '@/data/features'
       <MotionReveal class="mx-auto max-w-[980px] text-center">
         <h2 class="brand-heading text-white">
           Discover
-          <span class="font-ibm-plex-serif text-[72px] leading-[96%] font-medium tracking-[-0.022em] text-[#00d982]">
+          <span class="font-ibm-plex-serif font-medium italic tracking-[-0.022em] text-[#00d982]">
             zolvat
           </span>
         </h2>
