@@ -10,7 +10,9 @@ import { Features } from '@/data/features'
       <MotionReveal class="mx-auto max-w-[980px] text-center">
         <h2 class="brand-heading text-white">
           Discover
-          <span class="text-[#00d982]">zolvat</span>
+          <span class="font-ibm-plex-serif text-[72px] leading-[96%] font-medium tracking-[-0.022em] text-[#00d982]">
+            zolvat
+          </span>
         </h2>
         <p class="brand-copy mt-3 text-[#adadad]">Accounts and payments, made simple.</p>
         <div class="mt-8 flex justify-center gap-4">
@@ -27,10 +29,10 @@ import { Features } from '@/data/features'
         />
       </MotionReveal>
 
-      <MotionReveal class="mx-auto mt-24 grid max-w-[980px] gap-8 lg:grid-cols-[1fr_auto] lg:items-start">
+      <MotionReveal class="mx-auto mt-16 grid max-w-[980px] gap-8 md:mt-24 lg:grid-cols-[1fr_auto] lg:items-start">
         <div>
-          <h2 class="brand-heading text-white">Experience seamless usability.</h2>
-          <p class="brand-copy mt-5 max-w-[650px] text-[#adadad] sm:text-left">
+          <h2 class="discover-heading text-white">Experience seamless usability.</h2>
+          <p class="discover-copy mt-4 max-w-[650px] text-[#adadad] md:mt-5 lg:text-left">
             Access a comprehensive marketplace offering IBANs, debit cards, payroll management,
             seamless payouts, and more, streamlining your financial operations and enhancing
             efficiency.
@@ -39,7 +41,7 @@ import { Features } from '@/data/features'
         <button class="w-max rounded-full bg-[#292929] px-7 py-3 text-base text-white">Learn More</button>
       </MotionReveal>
 
-      <MotionReveal class="mx-auto mt-20 grid max-w-[860px] gap-8 md:grid-cols-2">
+      <MotionReveal class="mx-auto mt-14 grid max-w-[860px] gap-6 md:mt-20 md:grid-cols-2 md:gap-8">
         <FeatureCard v-for="feature in Features" :key="feature.id" :feature="feature" />
       </MotionReveal>
     </div>

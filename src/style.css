@@ -82,3 +82,51 @@ body {
   letter-spacing: -0.2px;
   text-align: center;
 }
+
+.discover-heading {
+  font-family: var(--heading);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+
+.discover-copy {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.16px;
+}
+
+.feature-card-heading {
+  font-family: var(--heading);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.56px;
+}
+
+.feature-card-copy {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.16px;
+}
+
+@media (min-width: 768px) {
+  .discover-heading,
+  .feature-card-heading {
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: -0.8px;
+  }
+
+  .discover-copy,
+  .feature-card-copy {
+    font-size: 20px;
+    line-height: 27.2px;
+    letter-spacing: -0.2px;
+  }
+}
