@@ -7,7 +7,9 @@ import MotionReveal from '@/components/MotionReveal.vue'
     <div class="mx-auto max-w-[1180px] text-center">
       <MotionReveal>
       <h2 class="brand-heading mx-auto max-w-[760px] text-[#bebebe]">
-        What people have to say about
+        <span class="font-ibm-plex-serif font-medium italic tracking-[-0.022em]">
+          What people have to say about
+        </span>
         <span class="text-black">ZOLVAT</span>
       </h2>
       <p class="brand-copy mx-auto mt-5 max-w-[650px] text-[#777]">
