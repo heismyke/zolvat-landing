@@ -5,7 +5,7 @@ import { Motion } from 'motion-v'
 <template>
   <header class="px-2 pt-2 sm:px-4 sm:pt-4">
     <section
-      class="relative min-h-[760px] overflow-hidden rounded-[24px] bg-linear-to-b from-white via-white to-[#DDF8FB] sm:min-h-[840px] sm:rounded-[32px] lg:min-h-[900px]"
+      class="relative min-h-[820px] overflow-hidden rounded-[24px] bg-linear-to-b from-white via-white to-[#DDF8FB] sm:min-h-[840px] sm:rounded-[32px] lg:min-h-[900px]"
     >
       <!-- Hero Content -->
       <div
@@ -82,7 +82,7 @@ import { Motion } from 'motion-v'
       <!-- Hero Image -->
       <Motion
         as="div"
-        class="absolute bottom-[-18px] left-1/2 w-[180%] max-w-[820px] -translate-x-1/2 sm:bottom-[-55px] sm:w-full sm:max-w-[950px] lg:bottom-[-80px]"
+        class="absolute bottom-[-18px] left-1/2 w-[145%] max-w-[700px] -translate-x-1/2 sm:bottom-[-55px] sm:w-full sm:max-w-[950px] lg:bottom-[-80px]"
         :initial="{ opacity: 0, y: 60, scale: 0.96 }"
         :animate="{ opacity: 1, y: 0, scale: 1 }"
         :transition="{ duration: 0.75, ease: 'easeOut', delay: 0.32 }"
