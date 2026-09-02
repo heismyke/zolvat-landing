@@ -1,6 +1,5 @@
 <script setup>
 import { Motion } from 'motion-v'
-import { faCheckDouble, faCircleDollarToSlot, faShieldHalved, faStopwatch } from '@fortawesome/free-solid-svg-icons'
 
 defineProps({
   feature: {
@@ -10,10 +9,10 @@ defineProps({
 })
 
 const featureIcons = {
-  1: faCheckDouble,
-  2: faCircleDollarToSlot,
-  3: faStopwatch,
-  4: faShieldHalved,
+  1: '/tick-double-04.svg',
+  2: '/money-send-circle.svg',
+  3: '/Vector.png',
+  4: '/Vector (1).png',
 }
 </script>
 
@@ -24,8 +23,12 @@ const featureIcons = {
     :whileHover="{ y: -6 }"
     :transition="{ duration: 0.22, ease: 'easeOut' }"
   >
-    <div class="mb-12 text-[#25c86a]">
-      <FontAwesomeIcon :icon="featureIcons[feature.id]" class="h-12 w-12" />
+    <div class="mb-12">
+      <img
+        :src="featureIcons[feature.id]"
+        :alt="`${feature.features_header} icon`"
+        class="h-12 w-12 object-contain"
+      />
     </div>
 
     <h3 class="brand-heading max-w-[330px] text-white">
