@@ -26,14 +26,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
         <!-- Heading -->
         <Motion
           as="h1"
-          class="font-bricolage max-w-[760px] text-[34px] leading-[41px] font-semibold text-black sm:text-[53px] sm:leading-[60px]"
+          class="brand-heading max-w-[760px] text-black"
           :initial="{ opacity: 0, y: 22 }"
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.55, ease: 'easeOut', delay: 0.08 }"
         >
           Modern Banking Built
 
-          <span class="font-ibm-plex-serif mt-2 block text-[31px] leading-[96%] font-medium italic text-[#C0C9BF] sm:text-[48px]">
+          <span class="mt-2 block text-[#C0C9BF]">
             for modern businesses.
           </span>
         </Motion>
@@ -41,7 +41,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
         <!-- Description -->
         <Motion
           as="p"
-          class="font-avenir mt-5 max-w-[620px] text-[14px] leading-none font-light text-[#737373]"
+          class="brand-copy mt-5 max-w-[620px] text-[#737373]"
           :initial="{ opacity: 0, y: 18 }"
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.5, ease: 'easeOut', delay: 0.16 }"

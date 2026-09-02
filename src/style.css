@@ -63,3 +63,22 @@ body {
 .font-ibm-plex-serif {
   font-family: var(--serif);
 }
+
+.brand-heading {
+  font-family: var(--heading);
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 54px;
+  letter-spacing: -0.8px;
+}
+
+.brand-copy {
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27.2px;
+  letter-spacing: -0.2px;
+  text-align: center;
+}

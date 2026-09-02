@@ -7,12 +7,12 @@ import MotionReveal from '@/components/MotionReveal.vue'
   <section class="overflow-hidden bg-white py-20 lg:py-28">
     <div class="mx-auto grid max-w-[1440px] items-center gap-12 px-5 lg:grid-cols-2 lg:px-0">
       <MotionReveal class="mx-auto w-full max-w-[520px] lg:ml-auto">
-        <h2 class="text-5xl font-semibold text-[#414141]">Why Zolvat?</h2>
+        <h2 class="brand-heading text-[#414141]">Why Zolvat?</h2>
         <div class="mt-28">
-          <h3 class="max-w-[520px] text-2xl leading-tight font-semibold text-[#222]">
+          <h3 class="brand-heading max-w-[520px] text-[#222]">
             Banking Built for Businesses That Operate Globally
           </h3>
-          <p class="mt-6 max-w-[520px] text-base leading-7 text-[#777]">
+          <p class="brand-copy mt-6 max-w-[560px] text-[#777] sm:text-left">
             Zolvat combines banking, payments, compliance, and automation into one platform so your
             business can scale without financial friction.
           </p>

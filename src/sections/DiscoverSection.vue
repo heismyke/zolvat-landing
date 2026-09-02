@@ -8,11 +8,11 @@ import { Features } from '@/data/features'
   <section id="products" class="px-5">
     <div class="mx-auto max-w-[1440px] rounded-[28px] bg-[#101010] px-5 py-24 text-white sm:rounded-[32px] sm:px-10 lg:px-0 lg:py-28">
       <MotionReveal class="mx-auto max-w-[980px] text-center">
-        <h2 class="text-5xl leading-tight font-semibold sm:text-6xl lg:text-7xl">
+        <h2 class="brand-heading text-white">
           Discover
-          <span class="font-serif font-normal italic text-[#00d982]">zolvat</span>
+          <span class="text-[#00d982]">zolvat</span>
         </h2>
-        <p class="mt-3 text-lg text-[#adadad]">Accounts and payments, made simple.</p>
+        <p class="brand-copy mt-3 text-[#adadad]">Accounts and payments, made simple.</p>
         <div class="mt-8 flex justify-center gap-4">
           <button class="rounded-full bg-white px-7 py-3 text-base text-[#222]">Get Started</button>
           <button class="rounded-full bg-[#272727] px-7 py-3 text-base text-white">Learn More</button>
@@ -29,8 +29,8 @@ import { Features } from '@/data/features'
 
       <MotionReveal class="mx-auto mt-24 grid max-w-[980px] gap-8 lg:grid-cols-[1fr_auto] lg:items-start">
         <div>
-          <h2 class="font-bricolage text-[34.46px] leading-[41.36px] font-medium tracking-[-1.03px] text-white">Experience seamless usability.</h2>
-          <p class="font-avenir mt-5 max-w-[650px] text-[17.23px] leading-[23.44px] font-normal tracking-[-0.17px] text-[#adadad]">
+          <h2 class="brand-heading text-white">Experience seamless usability.</h2>
+          <p class="brand-copy mt-5 max-w-[650px] text-[#adadad] sm:text-left">
             Access a comprehensive marketplace offering IBANs, debit cards, payroll management,
             seamless payouts, and more, streamlining your financial operations and enhancing
             efficiency.

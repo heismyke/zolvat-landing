@@ -28,10 +28,10 @@ const featureIcons = {
       <FontAwesomeIcon :icon="featureIcons[feature.id]" class="h-12 w-12" />
     </div>
 
-    <h3 class="font-bricolage max-w-[280px] text-[34.46px] leading-[41.36px] font-medium tracking-[-1.03px] text-white">
+    <h3 class="brand-heading max-w-[330px] text-white">
       {{ feature.features_header }}
     </h3>
-    <p class="font-avenir mt-4 text-[17.23px] leading-[23.44px] font-normal tracking-[-0.17px] text-[#b9b9b9]">
+    <p class="brand-copy mt-4 text-left text-[#b9b9b9]">
       {{ feature.features_paragraph }}
     </p>
   </Motion>

@@ -8,7 +8,7 @@ import { useCases } from '@/data/useCases'
   <section id="solutions" class="bg-[#fbfdfc] px-5 py-28 lg:py-36">
     <div class="mx-auto max-w-[1040px]">
       <MotionReveal>
-      <h2 class="max-w-[760px] text-2xl leading-snug text-[#1f1f1f] sm:text-3xl lg:text-[34px]">
+      <h2 class="brand-heading max-w-[860px] text-[#1f1f1f]">
         Who can use Zolvat?
         <span class="rounded-md bg-[#ececec] px-1.5 text-[#8a8a8a]">Small-scaled businesses</span>
         <sup class="text-xs text-[#555]">01</sup>

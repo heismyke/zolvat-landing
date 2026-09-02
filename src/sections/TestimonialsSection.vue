@@ -6,11 +6,11 @@ import MotionReveal from '@/components/MotionReveal.vue'
   <section id="resources" class="px-5 py-28 lg:py-36">
     <div class="mx-auto max-w-[1180px] text-center">
       <MotionReveal>
-      <h2 class="mx-auto max-w-[760px] font-serif text-5xl leading-tight font-normal italic text-[#bebebe] sm:text-6xl lg:text-7xl">
+      <h2 class="brand-heading mx-auto max-w-[760px] text-[#bebebe]">
         What people have to say about
-        <span class="font-serif not-italic text-black">ZOLVAT</span>
+        <span class="text-black">ZOLVAT</span>
       </h2>
-      <p class="mx-auto mt-5 max-w-[650px] text-xl leading-8 text-[#777]">
+      <p class="brand-copy mx-auto mt-5 max-w-[650px] text-[#777]">
         Six years of uninterrupted operation. Trillions deposited. Independently audited, onchain,
         and open to verify.
       </p>
