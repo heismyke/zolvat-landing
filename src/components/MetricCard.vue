@@ -1,6 +1,5 @@
 <script setup>
 import { Motion } from 'motion-v'
-import { faArrowsRotate, faCircleNodes, faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 defineProps({
   metric: {
@@ -10,9 +9,9 @@ defineProps({
 })
 
 const metricIcons = {
-  1: faArrowsRotate,
-  2: faCircleNodes,
-  3: faGlobe,
+  1: '/Margin.png',
+  2: '/Margin (1).png',
+  3: '/global.png',
 }
 </script>
 
@@ -23,8 +22,12 @@ const metricIcons = {
     :whileHover="{ y: -5, boxShadow: '0 18px 45px rgba(0,0,0,0.08)' }"
     :transition="{ duration: 0.22, ease: 'easeOut' }"
   >
-    <div class="mb-9 text-[#008a57]">
-      <FontAwesomeIcon :icon="metricIcons[metric.id]" class="h-6 w-6" />
+    <div class="mb-9">
+      <img
+        :src="metricIcons[metric.id]"
+        :alt="`${metric.metric_text} icon`"
+        class="h-8 w-8 object-contain"
+      />
     </div>
 
     <p class="text-2xl font-medium text-[#262626]">{{ metric.metrics_figure }}</p>
