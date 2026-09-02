@@ -5,8 +5,16 @@ import { FrequentlyAskedQuestions } from '@/data/questions'
 </script>
 
 <template>
-  <section id="support" class="border-t border-[#e9e9e9] bg-white px-5 py-24 lg:py-32">
-    <MotionReveal class="mx-auto grid max-w-[1120px] gap-12 lg:grid-cols-[0.75fr_1.25fr]">
+  <section id="support" class="bg-white px-5 pb-24 lg:pb-32">
+    <div class="-mx-5 overflow-hidden border-t border-[#e9e9e9]">
+      <img
+        src="/Gradient+Blur.png"
+        alt=""
+        class="mx-auto h-[170px] w-full max-w-[1330px] object-fill sm:h-[220px] lg:h-[289px]"
+      />
+    </div>
+
+    <MotionReveal class="mx-auto mt-12 grid max-w-[1120px] gap-12 lg:mt-4 lg:grid-cols-[0.75fr_1.25fr]">
       <h2 class="brand-heading text-[#242424]">
         Frequently<br />Asked<br /><span class="underline decoration-2 underline-offset-4">Questions</span>
       </h2>

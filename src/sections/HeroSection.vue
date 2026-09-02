@@ -53,14 +53,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
         <!-- Buttons -->
         <Motion
           as="div"
-          class="mt-9 grid w-full max-w-[410px] grid-cols-2 items-center gap-4 sm:mt-10 sm:flex sm:w-auto sm:max-w-none sm:gap-5"
+          class="mt-8 grid w-full max-w-[360px] grid-cols-2 items-center gap-3 sm:mt-10 sm:flex sm:w-auto sm:max-w-none sm:gap-5"
           :initial="{ opacity: 0, y: 18 }"
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.5, ease: 'easeOut', delay: 0.24 }"
         >
           <Motion
             as="button"
-            class="min-h-16 rounded-full border border-[#A6A6A6] px-5 py-3 text-sm text-[#777] transition hover:bg-gray-100 sm:min-h-0 sm:px-8 sm:text-[16px]"
+            class="min-h-12 rounded-full border border-[#A6A6A6] px-4 py-2 text-xs text-[#777] transition hover:bg-gray-100 sm:min-h-0 sm:px-8 sm:py-3 sm:text-[16px]"
             :whileHover="{ y: -2 }"
             :whilePress="{ scale: 0.97 }"
           >
@@ -69,13 +69,13 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
           <Motion
             as="button"
-            class="flex min-h-16 items-center justify-center gap-4 rounded-full bg-[#015130] px-5 py-3 text-sm text-white transition hover:bg-[#013d25] sm:min-h-0 sm:gap-5 sm:px-8 sm:text-[16px]"
+            class="flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#015130] px-4 py-2 text-xs text-white transition hover:bg-[#013d25] sm:min-h-0 sm:gap-5 sm:px-8 sm:py-3 sm:text-[16px]"
             :whileHover="{ y: -2 }"
             :whilePress="{ scale: 0.97 }"
           >
             Create an Account
 
-            <FontAwesomeIcon :icon="faArrowRight" class="h-5 w-5" />
+            <FontAwesomeIcon :icon="faArrowRight" class="h-4 w-4 sm:h-5 sm:w-5" />
           </Motion>
         </Motion>
       </div>
