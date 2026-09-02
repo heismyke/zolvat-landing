@@ -1,11 +1,65 @@
 @import "tailwindcss";
 
-:root {
-    --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  
+@font-face {
+  font-family: 'Avenir';
+  src: url('/avenir-similar-fonts/Metropolis/Metropolis-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Avenir';
+  src: url('/avenir-similar-fonts/Metropolis/Metropolis-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Avenir';
+  src: url('/avenir-similar-fonts/Metropolis/Metropolis-Medium.otf') format('opentype');
+  font-weight: 450 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf')
+    format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('/IBM_Plex_Serif/IBMPlexSerif-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --sans: 'Avenir', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Bricolage Grotesque', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --serif: 'IBM Plex Serif', Georgia, serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+body {
+  font-family: var(--sans);
+}
+
+.font-avenir {
+  font-family: var(--sans);
+}
+
+.font-bricolage {
+  font-family: var(--heading);
+}
+
+.font-ibm-plex-serif {
+  font-family: var(--serif);
+}

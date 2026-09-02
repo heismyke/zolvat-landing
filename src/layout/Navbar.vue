@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Navigation } from '../data/navbar'
 
 const isMenuOpen = ref(false)
@@ -21,21 +22,21 @@ const isMenuOpen = ref(false)
           v-for="item in navigation.nav_items.slice(0, -2)"
           :key="item.label"
           :to="item.href"
-          class="text-[15px] text-[#00000072]"
+          class="font-avenir text-[14px] leading-none font-[450] text-[#737373]"
         >
           {{ item.label }}
         </RouterLink>
       </div>
 
       <!-- Desktop login -->
-      <button class="hidden rounded-full bg-[#252228] px-5 py-2 text-white md:block">Login</button>
+      <button class="font-avenir hidden rounded-full bg-[#252228] px-5 py-2 text-[14px] leading-none font-[450] text-white md:block">Login</button>
 
       <!-- Mobile hamburger -->
       <button
         @click="isMenuOpen = !isMenuOpen"
         class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 md:hidden"
       >
-        ☰
+        <FontAwesomeIcon :icon="faBars" class="h-5 w-5" />
       </button>
     </nav>
 
@@ -46,13 +47,13 @@ const isMenuOpen = ref(false)
           v-for="item in navigation.nav_items.slice(0, -2)"
           :key="item.label"
           :to="item.href"
-          class="text-[15px] text-[#00000072]"
+          class="font-avenir text-[14px] leading-none font-[450] text-[#737373]"
           @click="isMenuOpen = false"
         >
           {{ item.label }}
         </RouterLink>
 
-        <button class="mt-2 w-full rounded-full bg-[#252228] px-5 py-3 text-white">Login</button>
+        <button class="font-avenir mt-2 w-full rounded-full bg-[#252228] px-5 py-3 text-[14px] leading-none font-[450] text-white">Login</button>
       </div>
     </div>
   </div>

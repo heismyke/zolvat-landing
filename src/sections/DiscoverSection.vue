@@ -29,8 +29,8 @@ import { Features } from '@/data/features'
 
       <MotionReveal class="mx-auto mt-24 grid max-w-[980px] gap-8 lg:grid-cols-[1fr_auto] lg:items-start">
         <div>
-          <h2 class="text-4xl leading-tight font-semibold text-white">Experience seamless usability.</h2>
-          <p class="mt-5 max-w-[650px] text-lg leading-8 text-[#adadad]">
+          <h2 class="font-bricolage text-[34.46px] leading-[41.36px] font-medium tracking-[-1.03px] text-white">Experience seamless usability.</h2>
+          <p class="font-avenir mt-5 max-w-[650px] text-[17.23px] leading-[23.44px] font-normal tracking-[-0.17px] text-[#adadad]">
             Access a comprehensive marketplace offering IBANs, debit cards, payroll management,
             seamless payouts, and more, streamlining your financial operations and enhancing
             efficiency.

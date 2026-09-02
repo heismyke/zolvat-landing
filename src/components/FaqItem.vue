@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { AnimatePresence, Motion } from 'motion-v'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 defineProps({
   item: {
@@ -22,11 +23,11 @@ const isOpen = ref(false)
       <span>{{ item.question }}</span>
       <Motion
         as="span"
-        class="text-3xl leading-none text-[#008a57]"
+        class="text-[#008a57]"
         :animate="{ rotate: isOpen ? 45 : 0 }"
         :transition="{ duration: 0.2 }"
       >
-        +
+        <FontAwesomeIcon :icon="faPlus" class="h-5 w-5" />
       </Motion>
     </button>
 

@@ -1,5 +1,6 @@
 <script setup>
 import { Motion } from 'motion-v'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import { Motion } from 'motion-v'
         <!-- Badge -->
         <Motion
           as="div"
-          class="mb-5 rounded-full bg-[#F3F5FC] px-5 py-2 text-sm text-[#252525] sm:text-[15px]"
+          class="font-avenir mb-5 rounded-full bg-[#F3F5FC] px-5 py-2 text-[13px] leading-none font-light text-[#252525]"
           :initial="{ opacity: 0, y: 16 }"
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.45, ease: 'easeOut' }"
@@ -25,14 +26,14 @@ import { Motion } from 'motion-v'
         <!-- Heading -->
         <Motion
           as="h1"
-          class="max-w-[760px] text-[38px] leading-[1.06] font-semibold text-black sm:text-[56px]"
+          class="font-bricolage max-w-[760px] text-[34px] leading-[41px] font-semibold text-black sm:text-[53px] sm:leading-[60px]"
           :initial="{ opacity: 0, y: 22 }"
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.55, ease: 'easeOut', delay: 0.08 }"
         >
           Modern Banking Built
 
-          <span class="mt-2 block font-serif font-normal italic text-[#BFC9BD]">
+          <span class="font-ibm-plex-serif mt-2 block text-[31px] leading-[96%] font-medium italic text-[#C0C9BF] sm:text-[48px]">
             for modern businesses.
           </span>
         </Motion>
@@ -40,7 +41,7 @@ import { Motion } from 'motion-v'
         <!-- Description -->
         <Motion
           as="p"
-          class="mt-5 max-w-[620px] text-lg leading-7 text-[#828282] sm:text-[16px] sm:leading-6"
+          class="font-avenir mt-5 max-w-[620px] text-[14px] leading-none font-light text-[#737373]"
           :initial="{ opacity: 0, y: 18 }"
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.5, ease: 'easeOut', delay: 0.16 }"
@@ -59,7 +60,7 @@ import { Motion } from 'motion-v'
         >
           <Motion
             as="button"
-            class="min-h-16 rounded-full border border-[#A6A6A6] px-5 py-3 text-base text-[#777] transition hover:bg-gray-100 sm:min-h-0 sm:px-8 sm:text-[16px]"
+            class="min-h-16 rounded-full border border-[#A6A6A6] px-5 py-3 text-sm text-[#777] transition hover:bg-gray-100 sm:min-h-0 sm:px-8 sm:text-[16px]"
             :whileHover="{ y: -2 }"
             :whilePress="{ scale: 0.97 }"
           >
@@ -68,13 +69,13 @@ import { Motion } from 'motion-v'
 
           <Motion
             as="button"
-            class="flex min-h-16 items-center justify-center gap-4 rounded-full bg-[#015130] px-5 py-3 text-base text-white transition hover:bg-[#013d25] sm:min-h-0 sm:gap-5 sm:px-8 sm:text-[16px]"
+            class="flex min-h-16 items-center justify-center gap-4 rounded-full bg-[#015130] px-5 py-3 text-sm text-white transition hover:bg-[#013d25] sm:min-h-0 sm:gap-5 sm:px-8 sm:text-[16px]"
             :whileHover="{ y: -2 }"
             :whilePress="{ scale: 0.97 }"
           >
             Create an Account
 
-            <span class="text-2xl leading-none"> → </span>
+            <FontAwesomeIcon :icon="faArrowRight" class="h-5 w-5" />
           </Motion>
         </Motion>
       </div>
